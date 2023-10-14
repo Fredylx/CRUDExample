@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CRUDExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEv-DQ-oGW">
+                                <rect key="frame" x="16" y="62.999999999999993" width="358" height="24.666666666666664"/>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KvS-JC-LPd">
+                                <rect key="frame" x="143" y="103.66666666666667" width="104.33333333333331" height="44.000000000000014"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="rUt-Lg-8Qr"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Make Kitty"/>
+                                <connections>
+                                    <action selector="makeKittyAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="li4-T9-vHY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yts-IY-TCr">
+                                <rect key="frame" x="142" y="163.66666666666666" width="106.33333333333331" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="sfn-bN-CGi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Fetch Kitty"/>
+                                <connections>
+                                    <action selector="fetchKittyAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OVq-vO-5LS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbQ-i3-VrG">
+                                <rect key="frame" x="132.66666666666666" y="223.66666666666666" width="124.99999999999997" height="43.999999999999972"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="q2J-0D-2m9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Rename Kitty"/>
+                                <connections>
+                                    <action selector="renameKittyAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2HI-Zj-WMZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbc-bb-Zel">
+                                <rect key="frame" x="138.66666666666666" y="283.66666666666669" width="112.66666666666666" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="7Rh-qD-M29"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Delete Kitty"/>
+                                <connections>
+                                    <action selector="deleteKittyAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jZ0-yJ-uKy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Yts-IY-TCr" firstAttribute="top" secondItem="KvS-JC-LPd" secondAttribute="bottom" constant="16" id="0vM-bB-cbb"/>
+                            <constraint firstItem="Yts-IY-TCr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9aj-gK-0eE"/>
+                            <constraint firstItem="dEv-DQ-oGW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Dul-dA-xdx"/>
+                            <constraint firstItem="Mbc-bb-Zel" firstAttribute="top" secondItem="wbQ-i3-VrG" secondAttribute="bottom" constant="16" id="NWp-Ue-K6b"/>
+                            <constraint firstItem="dEv-DQ-oGW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UQJ-ah-YYb"/>
+                            <constraint firstItem="wbQ-i3-VrG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WA5-C3-h42"/>
+                            <constraint firstItem="KvS-JC-LPd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a90-VV-c5A"/>
+                            <constraint firstItem="wbQ-i3-VrG" firstAttribute="top" secondItem="Yts-IY-TCr" secondAttribute="bottom" constant="16" id="aDI-2e-gZf"/>
+                            <constraint firstItem="KvS-JC-LPd" firstAttribute="top" secondItem="dEv-DQ-oGW" secondAttribute="bottom" constant="16" id="frm-8y-jFb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dEv-DQ-oGW" secondAttribute="trailing" constant="16" id="r8X-4s-2vT"/>
+                            <constraint firstItem="Mbc-bb-Zel" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yJT-pM-shK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="dEv-DQ-oGW" id="zJQ-U2-eFG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
